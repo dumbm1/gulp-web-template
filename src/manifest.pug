@@ -1,0 +1,48 @@
+<?xml version="1.0" enconding="UTF-8"?>
+ExtensionManifest(
+    Version="4.0"
+    ExtensionBundleId="com.ai.myExtension"
+    ExtensionBundleVersion="0.0.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+)
+    ExtensionList
+        Extension(Id="com.ai.myExtension" Version="0.0.1")
+
+    ExecutionEnvironment
+        HostList
+            Host(Name="ILST" Version="17.0")
+        LocalList
+            Locale(Code="All")
+        RequiredRuntimeList
+            RequiredRuntime(Name="CSXS" Version="4.0")
+
+    DispatchInfoList
+        Extension(Id="com.ai.myExtension")
+            DispatchInfo
+                Resources
+                    MainPath ./index.html
+                    ScriptPath ./jsx/hostscript.jsx
+                Lifecycle
+                    AutoVisible true
+                UI
+                    Type Panel
+                    Menu My Extension
+                    Geometry
+                        Size
+                            Height 400
+                            Width 600
+                        MaxSize
+                            Height 800
+                            Width 1200
+                        MinSize
+                            Height 200
+                            Width 300
+                    Icons
+                        Icon(Type="Normal") ./icons/iconNormal.png
+                        Icon(Type="RollOver") ./icons/iconRollOver.png
+                        Icon(Type="Disabled") ./icons/iconDisabled.png
+                        Icon(Type="DarkNormal") ./icons/iconDarkNormal.png
+                        Icon(Type="DarkRollOver") ./icons/iconDarkRollOver.png
+
+
+
